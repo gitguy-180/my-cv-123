@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Audio Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+      color: white;
+    }
+    .audio-container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 6px #00000033;
+      max-width: 400px;
+      width: 90%;
+    }
+    .audio-container h2 {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+    .audio-container audio {
+      width: 100%;
+      border: none;
+      outline: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="audio-container">
+    <h2>Now Playing: Sorry - Alan Walker & ISÁK</h2>
+    <audio src="audio/Alan Walker ISÁK Sorry Official Music Video.mp3" controls autoplay loop muted></audio>
+  </div>
+</body>
+</html>

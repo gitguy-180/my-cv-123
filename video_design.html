@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styled Video Player</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(to bottom, #141e30, #243b55);
+      color: white;
+    }
+
+    .video-container {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+      max-width: 450px;
+      width: 90%;
+    }
+
+    .video-container video {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .video-container h2 {
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .video-container p {
+      font-size: 14px;
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .container::before {
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url(img/OIP\ \(26\).jpg) no-repeat center center / cover;
+  </style>
+</head>
+<body>
+  <div class="video-container">
+    <h2>Now Playing: Altar - Hulvey & Forrest Frank</h2>
+    <video src="video/Hulvey, Forrest Frank - Altar (Official Music Video).mp4" controls muted autoplay loop></video>
+    <p>Enjoy the official music video for "Altar" by Hulvey & Forrest Frank.</p>
+  </div>
+</body>
+</html>
